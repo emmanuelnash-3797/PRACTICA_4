@@ -3,11 +3,11 @@
 $(document).ready(function(e){
 	
 	$("#beep").click(function(e){
-		alert('click en BEEP');
+		navigator.notification.beep(3);
 	});//click beep
 	
 	$("#vibrar").click(function(e){
-		alert('click en VIBRAR');
+		navigator.notification.vibrate(1000);
 	});//click beep
 	
 });//ready
