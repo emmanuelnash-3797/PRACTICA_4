@@ -11,15 +11,15 @@ $(document).ready(function(e){
 		}//Precargar el PLAY
 		
 		
-	$("#beep").click(function(e){
+	$("#beep").bind("tap")(function(e){
 		navigator.notification.beep(3);
 	});//click beep
 	
-	$("#vibrar").click(function(e){
+	$("#vibrar").bind("tap")(function(e){
 		navigator.notification.vibrate(1000);
 	});//click beep
 	
-	$("#play").click(function(e){
+	$("#play").bind("tap")(function(e){
 		audio.play('mario');
 	});//click beep
 	
